@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  color:#fff;
+}
+body{
+  background-color: #111;
+}
+@layer utilities {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+          
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
+  }
+/* Custom styling for date input */
+.custom-date-input::-webkit-datetime-edit {
+  color: gray;
+  font-weight: 400;
+}
+.custom-date-input::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* This inverts the colors, making the icon white */
+}
+.custom-date-input::-webkit-datetime-edit-year-field,
+.custom-date-input::-webkit-datetime-edit-month-field,
+.custom-date-input::-webkit-datetime-edit-day-field {
+  color: gray;
+}
+
+.custom-date-input::-moz-placeholder {
+  color: gray;
+}
+
+.custom-date-input::-ms-input-placeholder {
+  color: gray;
+}
+
+
